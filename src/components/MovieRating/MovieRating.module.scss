@@ -1,0 +1,15 @@
+.MovieRating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .StarImage {
+    height: 20px;
+    width: 20px;
+  }
+  .Rating {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+}

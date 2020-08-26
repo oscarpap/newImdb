@@ -1,0 +1,18 @@
+.MovieTitle {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+
+  .rank {
+    color: gray;
+  }
+  .title {
+    color: blue;
+    margin-left: 5px;
+  }
+  .year {
+    color: lightgray;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+}
