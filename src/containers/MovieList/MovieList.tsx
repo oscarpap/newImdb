@@ -17,11 +17,10 @@ export const MovieList: React.FunctionComponent = () => {
   const [movieItems, setMovieItems] = useState<MovieItem[]>([]);
 
   useEffect(() => {
-    /*
     setIsLoaded(true);
     setMovieItems(MOCK_DATA);
-    */
 
+    /*
     var fetchMovies = async () => {
       let result;
 
@@ -34,8 +33,8 @@ export const MovieList: React.FunctionComponent = () => {
         setError(error);
       }
     };
-
     fetchMovies();
+    */
   }, []);
 
   if (error) {
@@ -46,7 +45,7 @@ export const MovieList: React.FunctionComponent = () => {
     return (
       <div className={classes.MovieListContainer}>
         {movieItems.map((movieItem, id) => {
-          return <MovieListItem movieItem={movieItem} rank={id + 1} />;
+          return <MovieListItem movieItem={movieItem} rank={id + 1} key={id} />;
         })}
       </div>
     );
